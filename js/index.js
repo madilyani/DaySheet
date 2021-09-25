@@ -35,13 +35,13 @@ window.onscroll = function () {
   scrollFunc();
 };
 
-var wow = new WOW({
-  boxClass: "wow",
-  animateClass: "animated",
-  offset: 0,
-  mobile: true,
-  live: true,
-  scrollContainer: null,
-  resetAnimation: true,
-});
-wow.init();
+// var wow = new WOW({
+//   boxClass: "wow",
+//   animateClass: "animated",
+//   offset: 0,
+//   mobile: true,
+//   live: true,
+//   scrollContainer: null,
+//   resetAnimation: true,
+// });
+// wow.init();
