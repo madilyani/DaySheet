@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <header class="header" id="header">
+        <div class="auto__container">
+            <div class="header__inner">
+                <div class="header__inner-side">
+                    <div class="burger" id="menuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="index.html" class="header__inner-logo">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__inner-side">
+                    <nav class="nav" id="menu">
+                        <div class="nav__inner">
+                            <a href="#" class="nav__inner-link">
+                                Features
+                            </a>
+                            <a href="pricing.html" class="nav__inner-link">
+                                Pricing
+                            </a>
+                        </div>
+                    </nav>
+                    <a href="signUp.html" class="btn-primary">
+                        Sign Up
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header end
+    =========================================== -->
+    <!-- intro start
+    =========================================== -->
+    <section class="intro">
+        <div class="auto__container">
+            <div class="intro__inner">
+                <div class="intro__inner-content">
+                    <h1 class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                        The ultimate tour
+                        management software
+                    </h1>
+                    <p class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                        We are accepting applications now for our Beta release. Also follow us on Instagram for
+                        development updates.
+                    </p>
+                    <div class="intro__inner-content-btns wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                        <a href="signUp.html" class="btn-primary">
+                            Sign Up
+                        </a>
+                        <a href="#" class="btn-secondary icon">
+                            <span>Follow on Instagram</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 4.9C6.44305 4.9 5.9089 5.12125 5.51508 5.51508C5.12125 5.9089 4.9 6.44305 4.9 7C4.9 7.55695 5.12125 8.0911 5.51508 8.48492C5.9089 8.87875 6.44305 9.1 7 9.1C7.55695 9.1 8.0911 8.87875 8.48492 8.48492C8.87875 8.0911 9.1 7.55695 9.1 7C9.1 6.44305 8.87875 5.9089 8.48492 5.51508C8.0911 5.12125 7.55695 4.9 7 4.9ZM7 3.5C7.92826 3.5 8.8185 3.86875 9.47487 4.52513C10.1313 5.1815 10.5 6.07174 10.5 7C10.5 7.92826 10.1313 8.8185 9.47487 9.47487C8.8185 10.1313 7.92826 10.5 7 10.5C6.07174 10.5 5.1815 10.1313 4.52513 9.47487C3.86875 8.8185 3.5 7.92826 3.5 7C3.5 6.07174 3.86875 5.1815 4.52513 4.52513C5.1815 3.86875 6.07174 3.5 7 3.5ZM11.55 3.325C11.55 3.55706 11.4578 3.77962 11.2937 3.94372C11.1296 4.10781 10.9071 4.2 10.675 4.2C10.4429 4.2 10.2204 4.10781 10.0563 3.94372C9.89219 3.77962 9.8 3.55706 9.8 3.325C9.8 3.09294 9.89219 2.87038 10.0563 2.70628C10.2204 2.54219 10.4429 2.45 10.675 2.45C10.9071 2.45 11.1296 2.54219 11.2937 2.70628C11.4578 2.87038 11.55 3.09294 11.55 3.325ZM7 1.4C5.2682 1.4 4.9854 1.4049 4.1797 1.4406C3.6309 1.4665 3.2627 1.54 2.9211 1.673C2.6173 1.7906 2.3982 1.9313 2.1651 2.1651C1.946 2.37678 1.77755 2.63521 1.6723 2.9211C1.5393 3.2641 1.4658 3.6316 1.4406 4.1797C1.4042 4.9525 1.4 5.2227 1.4 7C1.4 8.7318 1.4049 9.0146 1.4406 9.8203C1.4665 10.3684 1.54 10.7373 1.6723 11.0782C1.7913 11.3827 1.9313 11.6018 2.1637 11.8342C2.3996 12.0694 2.6187 12.2101 2.9197 12.3263C3.2655 12.46 3.6337 12.5342 4.1797 12.5594C4.9525 12.5958 5.2227 12.6 7 12.6C8.7318 12.6 9.0146 12.5951 9.8203 12.5594C10.3677 12.5335 10.7366 12.46 11.0782 12.3277C11.3813 12.2094 11.6018 12.0687 11.8342 11.8363C12.0701 11.6004 12.2108 11.3813 12.327 11.0803C12.46 10.7352 12.5342 10.3663 12.5594 9.8203C12.5958 9.0475 12.6 8.7773 12.6 7C12.6 5.2682 12.5951 4.9854 12.5594 4.1797C12.5335 3.6323 12.46 3.2627 12.327 2.9211C12.2215 2.6355 12.0534 2.37717 11.8349 2.1651C11.6233 1.94589 11.3649 1.77742 11.0789 1.6723C10.7359 1.5393 10.3677 1.4658 9.8203 1.4406C9.0475 1.4042 8.7773 1.4 7 1.4ZM7 0C8.9019 0 9.1392 0.00699996 9.8854 0.042C10.6309 0.077 11.1384 0.1939 11.585 0.3675C12.047 0.5453 12.4362 0.7861 12.8254 1.1746C13.1813 1.52453 13.4568 1.94781 13.6325 2.415C13.8054 2.8609 13.923 3.3691 13.958 4.1146C13.9909 4.8608 14 5.0981 14 7C14 8.9019 13.993 9.1392 13.958 9.8854C13.923 10.6309 13.8054 11.1384 13.6325 11.585C13.4573 12.0524 13.1818 12.4758 12.8254 12.8254C12.4754 13.1812 12.0521 13.4566 11.585 13.6325C11.1391 13.8054 10.6309 13.923 9.8854 13.958C9.1392 13.9909 8.9019 14 7 14C5.0981 14 4.8608 13.993 4.1146 13.958C3.3691 13.923 2.8616 13.8054 2.415 13.6325C1.94763 13.4571 1.52427 13.1817 1.1746 12.8254C0.818585 12.4755 0.543152 12.0522 0.3675 11.585C0.1939 11.1391 0.077 10.6309 0.042 9.8854C0.00909996 9.1392 0 8.9019 0 7C0 5.0981 0.00699996 4.8608 0.042 4.1146C0.077 3.3684 0.1939 2.8616 0.3675 2.415C0.542665 1.94753 0.818163 1.52412 1.1746 1.1746C1.52437 0.818462 1.9477 0.543011 2.415 0.3675C2.8616 0.1939 3.3684 0.077 4.1146 0.042C4.8608 0.00909996 5.0981 0 7 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="intro__inner-image wow fadeIn" data-wow-duration=".6s" data-wow-delay=".6s">
+                    <img src="images/homePage/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="anchor" id="stickyPosition"></div>
+    <!-- intro end
+    =========================================== -->
+    <!-- book start
+    =========================================== -->
+    <section class="book">
+        <div class="auto__container">
+            <div class="book__inner">
+                <div class="book__inner-content">
+                    <h2 class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                        Personalized tour books and permission settings to maximize collaboration
+                    </h2>
+                    <p class="sm wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                        Customize your team member’s experiences with total flexibility, so they have exactly what they
+                        need.
+                    </p>
+                    <div class="tab__btns wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                        <div class="tab__btn tabBtn active" data-tab="#tab-1">
+                            <div class="tab__btn-icon green">
+                                <span>
+                                    <img src="images/icons/A.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="tab__btn-text">
+                                Artist Party
+                            </div>
+                        </div>
+                        <div class="tab__btn tabBtn" data-tab="#tab-2">
+                            <div class="tab__btn-icon red">
+                                <span>
+                                    <img src="images/icons/B.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="tab__btn-text">
+                                Band Party
+                            </div>
+                        </div>
+                        <div class="tab__btn tabBtn" data-tab="#tab-3">
+                            <div class="tab__btn-icon violet">
+                                <span>
+                                    <img src="images/icons/C.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="tab__btn-text">
+                                Crew Party
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__item tabItem active" id="tab-1">
+                    <div class="tab__item-image">
+                        <img src="images/homePage/party-1.svg" alt="">
+                    </div>
+                </div>
+                <div class="tab__item tabItem" id="tab-2">
+                    <div class="tab__item-image">
+                        <img src="images/homePage/party-1.svg" alt="">
+                    </div>
+                </div>
+                <div class="tab__item tabItem" id="tab-3">
+                    <div class="tab__item-image">
+                        <img src="images/homePage/party-1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- book end
+    =========================================== -->
+    <!-- daysheet start
+    =========================================== -->
+    <section class="daysheet">
+        <div class="auto__container">
+            <div class="daysheet__inner">
+                <div class="daysheet__inner-image wow fadeIn" data-wow-duration=".6s" data-wow-delay=".6s">
+                    <div class="daysheet__inner-image-item">
+                        <div class="daysheet__inner-image-item-image">
+                            <img src="images/homePage/X.svg" alt="">
+                        </div>
+                        <div class="daysheet__inner-image-item-title">
+                            Daysheets
+                        </div>
+                    </div>
+                    <div class="daysheet__inner-image-item">
+                        <div class="daysheet__inner-image-item-image">
+                            <img src="images/homePage/pdf.svg" alt="">
+                        </div>
+                        <div class="daysheet__inner-image-item-title">
+                            Day Sheets
+                        </div>
+                    </div>
+                </div>
+                <div class="daysheet__inner-content">
+                    <h2 class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                        Daysheets, or day sheets. However you fancy, the choice is yours.
+                    </h2>
+                    <p class="sm wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                        Whether you print PDF’s or want an efficient mobile experience, Daysheets has you covered. You
+                        can even export rooming lists and flight manifests from the app!
+                    </p>
+                    <a href="#" class="btn-primary wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                        Demo Daysheets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- daysheet end
+    =========================================== -->
+    <!-- feature start
+    =========================================== -->
+    <section class="feature">
+        <div class="auto__container">
+            <div class="feature__inner">
+                <h2 class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                    Organize and distribute faster than ever.
+                </h2>
+                <p class="sm wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                    Daysheets saves you hours of data entry every week by helping you sort each part of the tour. Here
+                    are a few of the features and integrations available:
+                </p>
+                <div class="feature__inner-row">
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon orange">
+                                    <img src="images/icons/venue.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    Accurate Venues
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Google Maps integration brings you the most current venue details and updates.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".3s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon green">
+                                    <img src="images/icons/flight.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    Flights & Statuses
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Search by flight number or add charters. Export manifests, or check the status from
+                                    the go.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon primary">
+                                    <img src="images/icons/hotel.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    Hotels & Rooming Lists
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Find hotels in any city you can imagine, and send the rooming lists to your agent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".5s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon violet">
+                                    <img src="images/icons/offline.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    Full Offline Mode
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Create and edit tours entirely offline. Daysheets syncs the changes when you come
+                                    online.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".6s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon red">
+                                    <img src="images/icons/drive.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    Calculated Drive Times
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Set your method of travel and Daysheets calculates your drives, flagging any
+                                    overdrives.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__inner-column wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".7s">
+                        <div class="cardFeature">
+                            <div class="cardFeature__inner">
+                                <div class="cardFeature__inner-icon yellow">
+                                    <img src="images/icons/user.svg" alt="">
+                                </div>
+                                <div class="cardFeature__inner-title">
+                                    User Flexibility
+                                </div>
+                                <div class="cardFeature__inner-para">
+                                    Add your travel agent to edit flights & hotels, and add family members to see out
+                                    the routing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature end
+    =========================================== -->
+    <!-- callob start
+    =========================================== -->
+    <section class="callob">
+        <div class="auto__container">
+            <div class="callob__inner">
+                <div class="callob__inner-header">
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1s">
+                        <div class="person__message">
+                            <div class="person__message-icon primary">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.49348 0.681305C8.81751 0.681305 9.08018 0.933539 9.08018 1.24469V2.23623H9.9133C10.2373 2.23623 10.5 2.48847 10.5 2.79961V12.1179C10.5 12.4291 10.2373 12.6813 9.9133 12.6813H2.0867C1.76268 12.6813 1.5 12.4291 1.5 12.1179V2.79961C1.5 2.48847 1.76268 2.23623 2.0867 2.23623H2.91982V1.24469C2.91982 0.933539 3.18249 0.681305 3.50652 0.681305H8.49348ZM6.38136 10.4278H5.61864V11.5545H6.38136V10.4278ZM9.3266 3.363H2.69687V11.5545H4.45698V9.8644C4.45698 9.55326 4.71965 9.30102 5.04368 9.30102H6.97979C7.30382 9.30102 7.56649 9.55326 7.56649 9.8644V11.5545H9.3266V3.363ZM4.3279 7.41933C4.50936 7.41933 4.65645 7.56058 4.65645 7.73483V8.22497C4.65645 8.39921 4.50936 8.54046 4.3279 8.54046H3.81747C3.63602 8.54046 3.48892 8.39921 3.48892 8.22497V7.73483C3.48892 7.56058 3.63602 7.41933 3.81747 7.41933H4.3279ZM6.25228 7.41933C6.43374 7.41933 6.58083 7.56058 6.58083 7.73483V8.22497C6.58083 8.39921 6.43374 8.54046 6.25228 8.54046H5.74185C5.5604 8.54046 5.4133 8.39921 5.4133 8.22497V7.73483C5.4133 7.56058 5.5604 7.41933 5.74185 7.41933H6.25228ZM8.18253 7.41933C8.36398 7.41933 8.51108 7.56058 8.51108 7.73483V8.22497C8.51108 8.39921 8.36398 8.54046 8.18253 8.54046H7.6721C7.49064 8.54046 7.34355 8.39921 7.34355 8.22497V7.73483C7.34355 7.56058 7.49064 7.41933 7.6721 7.41933H8.18253ZM4.3279 5.72919C4.50936 5.72919 4.65645 5.87044 4.65645 6.04469V6.53483C4.65645 6.70907 4.50936 6.85032 4.3279 6.85032H3.81747C3.63602 6.85032 3.48892 6.70907 3.48892 6.53483V6.04469C3.48892 5.87044 3.63602 5.72919 3.81747 5.72919H4.3279ZM6.25228 5.72919C6.43374 5.72919 6.58083 5.87044 6.58083 6.04469V6.53483C6.58083 6.70907 6.43374 6.85032 6.25228 6.85032H5.74185C5.5604 6.85032 5.4133 6.70907 5.4133 6.53483V6.04469C5.4133 5.87044 5.5604 5.72919 5.74185 5.72919H6.25228ZM8.18253 5.72919C8.36398 5.72919 8.51108 5.87044 8.51108 6.04469V6.53483C8.51108 6.70907 8.36398 6.85032 8.18253 6.85032H7.6721C7.49064 6.85032 7.34355 6.70907 7.34355 6.53483V6.04469C7.34355 5.87044 7.49064 5.72919 7.6721 5.72919H8.18253ZM4.3279 4.04469C4.50936 4.04469 4.65645 4.18594 4.65645 4.36018V4.85032C4.65645 5.02456 4.50936 5.16581 4.3279 5.16581H3.81747C3.63602 5.16581 3.48892 5.02456 3.48892 4.85032V4.36018C3.48892 4.18594 3.63602 4.04469 3.81747 4.04469H4.3279ZM6.25228 4.04469C6.43374 4.04469 6.58083 4.18594 6.58083 4.36018V4.85032C6.58083 5.02456 6.43374 5.16581 6.25228 5.16581H5.74185C5.5604 5.16581 5.4133 5.02456 5.4133 4.85032V4.36018C5.4133 4.18594 5.5604 4.04469 5.74185 4.04469H6.25228ZM8.18253 4.04469C8.36398 4.04469 8.51108 4.18594 8.51108 4.36018V4.85032C8.51108 5.02456 8.36398 5.16581 8.18253 5.16581H7.6721C7.49064 5.16581 7.34355 5.02456 7.34355 4.85032V4.36018C7.34355 4.18594 7.49064 4.04469 7.6721 4.04469H8.18253ZM7.90678 1.80807H4.09322V2.23623H7.90678V1.80807Z"
+                                        fill="" />
+                                </svg>
+                            </div>
+                            <div class="person__message-text">
+                                “I LOVE the rooms in this
+                                hotel. Artist approved! 👍”
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-1.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Christian Russell
+                                <span>Singer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1.2s">
+                        <div class="person__message">
+                            <div class="person__message-icon orange">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.10744 11.9313L6.41675 11.6612C9.0178 9.39003 10.3399 7.40692 10.3399 5.66374C10.3399 3.19513 8.41315 1.4313 6.10744 1.4313C3.80172 1.4313 1.875 3.19513 1.875 5.66374C1.875 7.40692 3.19708 9.39003 5.79813 11.6612L6.10744 11.9313ZM6.10743 10.6784C3.90027 8.68925 2.81554 7.00365 2.81554 5.66374C2.81554 3.73403 4.30353 2.37184 6.10743 2.37184C7.91134 2.37184 9.39933 3.73403 9.39933 5.66374C9.39933 7.00365 8.3146 8.68925 6.10743 10.6784ZM6.10743 3.31239C7.40605 3.31239 8.45878 4.36513 8.45878 5.66374C8.45878 6.96236 7.40605 8.01509 6.10743 8.01509C4.80882 8.01509 3.75608 6.96236 3.75608 5.66374C3.75608 4.36513 4.80882 3.31239 6.10743 3.31239ZM4.69662 5.66374C4.69662 4.88457 5.32826 4.25293 6.10743 4.25293C6.8866 4.25293 7.51824 4.88457 7.51824 5.66374C7.51824 6.44291 6.8866 7.07455 6.10743 7.07455C5.32826 7.07455 4.69662 6.44291 4.69662 5.66374Z"
+                                        fill="" />
+                                </svg>
+                            </div>
+                            <div class="person__message-text">
+                                Easy bus parking in Philly!
+                                Shhh, don’t tell anyone!
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-2.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Elwin Sharvill
+                                <span>Driver</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1s">
+                        <div class="person__message">
+                            <div class="person__message-icon red">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 1.4313C7.93231 1.4313 10.3077 1.84269 10.72 3.01031C10.7293 3.07046 10.7293 3.13165 10.72 3.1918V4.49251H11.3846C11.7245 4.49251 12 4.76337 12 5.0975V11.0263C12 11.3604 11.7245 11.6313 11.3846 11.6313H0.615385C0.275517 11.6313 0 11.3604 0 11.0263V5.0975C0 4.76337 0.275517 4.49251 0.615385 4.49251H1.31077V3.1918C1.29799 3.13196 1.29799 3.07015 1.31077 3.01031C1.69231 1.84269 4.06769 1.4313 6 1.4313ZM7.52615 8.34625H6.61539V10.3971H7.52615V8.34625ZM5.38462 8.34625H4.47385V10.3971H5.38462V8.34625ZM5.99385 2.64127C3.93231 2.64127 2.74462 3.10711 2.50462 3.3491V5.0733C2.50462 5.40742 2.2291 5.67828 1.88923 5.67828H1.23077V10.3971H3.21846V7.74127C3.21846 7.40715 3.49398 7.13629 3.83385 7.13629H8.14154C8.48141 7.13629 8.75692 7.40715 8.75692 7.74127V10.3971H10.7692L10.7631 5.70248H10.0985C9.75859 5.70248 9.48308 5.43162 9.48308 5.0975V3.337C9.25538 3.11316 8.05538 2.64127 5.99385 2.64127ZM4.464 3.83131C4.64957 3.83131 4.8 3.98174 4.8 4.1673V4.6953C4.8 4.88087 4.64957 5.03131 4.464 5.03131H3.936C3.75043 5.03131 3.6 4.88087 3.6 4.6953V4.1673C3.6 3.98174 3.75043 3.83131 3.936 3.83131H4.464ZM6.264 3.83131C6.44957 3.83131 6.6 3.98174 6.6 4.1673V4.6953C6.6 4.88087 6.44957 5.03131 6.264 5.03131H5.736C5.55043 5.03131 5.4 4.88087 5.4 4.6953V4.1673C5.4 3.98174 5.55043 3.83131 5.736 3.83131H6.264ZM8.064 3.83131C8.24957 3.83131 8.4 3.98174 8.4 4.1673V4.6953C8.4 4.88087 8.24957 5.03131 8.064 5.03131H7.536C7.35043 5.03131 7.2 4.88087 7.2 4.6953V4.1673C7.2 3.98174 7.35043 3.83131 7.536 3.83131H8.064Z"
+                                        fill="" />
+                                </svg>
+                            </div>
+                            <div class="person__message-text">
+                                “50 foot push and down
+                                3 stairs for load in.”
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-3.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Arlene McCoy
+                                <span>Production Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class=" wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                    Collaboration equals efficiency and opportunity.
+                </h2>
+                <p class="sm wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">
+                    Discover new venues and accomodations, or meet on a mutual day off. As the community prospers, so
+                    does the wealth of knowledge.
+                </p>
+                <div class="callob__inner-footer">
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1s">
+                        <div class="person__message">
+                            <div class="person__message-icon yellow">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.9 2.38587H9.4125V1.43132H8.4375V2.38587H3.5625V1.43132H2.5875V2.38587H2.1C1.56375 2.38587 1.125 2.81541 1.125 3.34041V10.9768C1.125 11.5018 1.56375 11.9313 2.1 11.9313H9.9C10.4363 11.9313 10.875 11.5018 10.875 10.9768V3.34041C10.875 2.81541 10.4363 2.38587 9.9 2.38587ZM9.9 10.9768H2.1V4.77223H9.9V10.9768Z"
+                                        fill="#FFBF46" />
+                                </svg>
+
+                            </div>
+                            <div class="person__message-text">
+                                Tanya is available from
+                                11/12 - 12/13 for work!
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-4.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Tanya Wilson
+                                <span>Lighting Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1.2s">
+                        <div class="person__message">
+                            <div class="person__message-icon red">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.10744 11.9313L6.41675 11.6612C9.0178 9.39003 10.3399 7.40692 10.3399 5.66374C10.3399 3.19513 8.41315 1.4313 6.10744 1.4313C3.80172 1.4313 1.875 3.19513 1.875 5.66374C1.875 7.40692 3.19708 9.39003 5.79813 11.6612L6.10744 11.9313ZM6.10743 10.6784C3.90027 8.68925 2.81554 7.00365 2.81554 5.66374C2.81554 3.73403 4.30353 2.37184 6.10743 2.37184C7.91134 2.37184 9.39933 3.73403 9.39933 5.66374C9.39933 7.00365 8.3146 8.68925 6.10743 10.6784ZM6.10743 3.31239C7.40605 3.31239 8.45878 4.36513 8.45878 5.66374C8.45878 6.96236 7.40605 8.01509 6.10743 8.01509C4.80882 8.01509 3.75608 6.96236 3.75608 5.66374C3.75608 4.36513 4.80882 3.31239 6.10743 3.31239ZM4.69662 5.66374C4.69662 4.88457 5.32826 4.25293 6.10743 4.25293C6.8866 4.25293 7.51824 4.88457 7.51824 5.66374C7.51824 6.44291 6.8866 7.07455 6.10743 7.07455C5.32826 7.07455 4.69662 6.44291 4.69662 5.66374Z"
+                                        fill="" />
+                                </svg>
+                            </div>
+                            <div class="person__message-text">
+                                Jimmy is currently in
+                                Lisbon, Portugal
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-5.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Jacob Jones
+                                <span>Rigger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person wow bounceIn" data-wow-duration=".6s" data-wow-delay="1.2s">
+                        <div class="person__message">
+                            <div class="person__message-icon green">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.10744 11.9313L6.41675 11.6612C9.0178 9.39003 10.3399 7.40692 10.3399 5.66374C10.3399 3.19513 8.41315 1.4313 6.10744 1.4313C3.80172 1.4313 1.875 3.19513 1.875 5.66374C1.875 7.40692 3.19708 9.39003 5.79813 11.6612L6.10744 11.9313ZM6.10743 10.6784C3.90027 8.68925 2.81554 7.00365 2.81554 5.66374C2.81554 3.73403 4.30353 2.37184 6.10743 2.37184C7.91134 2.37184 9.39933 3.73403 9.39933 5.66374C9.39933 7.00365 8.3146 8.68925 6.10743 10.6784ZM6.10743 3.31239C7.40605 3.31239 8.45878 4.36513 8.45878 5.66374C8.45878 6.96236 7.40605 8.01509 6.10743 8.01509C4.80882 8.01509 3.75608 6.96236 3.75608 5.66374C3.75608 4.36513 4.80882 3.31239 6.10743 3.31239ZM4.69662 5.66374C4.69662 4.88457 5.32826 4.25293 6.10743 4.25293C6.8866 4.25293 7.51824 4.88457 7.51824 5.66374C7.51824 6.44291 6.8866 7.07455 6.10743 7.07455C5.32826 7.07455 4.69662 6.44291 4.69662 5.66374Z"
+                                        fill="" />
+                                </svg>
+                            </div>
+                            <div class="person__message-text">
+                                “Best place for backline in
+                                Chicago, hands down.”
+                            </div>
+                        </div>
+                        <div class="person__info">
+                            <div class="person__info-avatar">
+                                <img src="images/homePage/avatar-6.png" alt="">
+                            </div>
+                            <div class="person__info-general">
+                                Gabriel Soares
+                                <span>Sound Technician</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- callob end
+    =========================================== -->
+    <!-- beta start
+    =========================================== -->
+    <section class="beta">
+        <div class="auto__container">
+            <div class="beta__inner">
+                <div class="beta__inner-content">
+                    <div class="beta__inner-content-title wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                        Try out the Daysheets Beta <br> risk free today.
+                    </div>
+                    <a href="signUp.html" class="beta__inner-content-btn wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">
+                        Sign Up
+                    </a>
+                    <div class="beta__inner-content-arrow wow fadeIn" data-wow-duration=".6s" data-wow-delay=".6s">
+                        <img src="images/homePage/Arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="beta__inner-image wow fadeIn" data-wow-duration=".6s" data-wow-delay=".4s">
+                    <img src="images/homePage/Macbook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- beta end
+    =========================================== -->
+    <!-- question start
+    =========================================== -->
+    <section class="question">
+        <div class="auto__container">
+            <div class="question__inner">
+                <h2 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                    Questions?
+                </h2>
+                <p class=" wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                    Our responsive support team is ready to field all your questions
+                </p>
+                <div class="question__inner-links wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                    <a href="#" class="question__inner-link">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.35 0H3.65C2.81457 0 2.01335 0.355579 1.42261 0.988515C0.831874 1.62145 0.5 2.47989 0.5 3.375V14.625C0.5 15.5201 0.831874 16.3786 1.42261 17.0115C2.01335 17.6444 2.81457 18 3.65 18H18.35C19.1854 18 19.9866 17.6444 20.5774 17.0115C21.1681 16.3786 21.5 15.5201 21.5 14.625V3.375C21.5 2.47989 21.1681 1.62145 20.5774 0.988515C19.9866 0.355579 19.1854 0 18.35 0V0ZM3.65 2.25H18.35C18.6285 2.25 18.8955 2.36853 19.0925 2.57951C19.2894 2.79048 19.4 3.07663 19.4 3.375L11 8.865L2.6 3.375C2.6 3.07663 2.71062 2.79048 2.90754 2.57951C3.10445 2.36853 3.37152 2.25 3.65 2.25V2.25ZM19.4 14.625C19.4 14.9234 19.2894 15.2095 19.0925 15.4205C18.8955 15.6315 18.6285 15.75 18.35 15.75H3.65C3.37152 15.75 3.10445 15.6315 2.90754 15.4205C2.71062 15.2095 2.6 14.9234 2.6 14.625V5.94L10.454 11.0813C10.6136 11.18 10.7947 11.232 10.979 11.232C11.1633 11.232 11.3444 11.18 11.504 11.0813L19.4 5.94V14.625Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                    <a href="#" class="question__inner-link">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.769 9.92866C15.5702 9.92866 15.3625 9.86525 15.1638 9.81996C14.7614 9.73102 14.3659 9.61295 13.9805 9.46667C13.5615 9.31378 13.1009 9.32172 12.6874 9.48896C12.2738 9.65619 11.9366 9.97091 11.7405 10.3725L11.5418 10.7802C10.662 10.2894 9.85361 9.67976 9.13916 8.96844C8.42991 8.25191 7.82207 7.44113 7.33268 6.55881L7.71204 6.30517C8.1125 6.10852 8.4263 5.77028 8.59305 5.35553C8.7598 4.94079 8.76772 4.47885 8.61528 4.0586C8.47186 3.67127 8.35419 3.27484 8.26302 2.87191C8.21785 2.67261 8.18172 2.46426 8.15463 2.25591C8.04494 1.61783 7.7117 1.04 7.21491 0.626463C6.71813 0.212929 6.09044 -0.00912562 5.4449 0.000287436H2.73517C2.3459 -0.00337822 1.96041 0.0771177 1.60495 0.236295C1.24949 0.395473 0.932397 0.629594 0.675262 0.922722C0.418127 1.21585 0.226986 1.5611 0.114852 1.93497C0.00271758 2.30885 -0.0277778 2.70256 0.0254418 3.08932C0.506634 6.88437 2.2348 10.4105 4.93696 13.1107C7.63912 15.8109 11.1613 17.5312 14.947 18H15.2902C15.9563 18.001 16.5994 17.7559 17.0967 17.3115C17.3825 17.0552 17.6107 16.741 17.7665 16.3896C17.9222 16.0383 18.0017 15.6578 18 15.2733V12.5557C17.9889 11.9265 17.7604 11.3206 17.3536 10.8415C16.9467 10.3624 16.3866 10.0397 15.769 9.92866V9.92866ZM16.2206 15.3639C16.2204 15.4925 16.1929 15.6196 16.14 15.7368C16.087 15.8539 16.0098 15.9584 15.9135 16.0433C15.8129 16.1312 15.6949 16.1968 15.5672 16.2358C15.4396 16.2748 15.3052 16.2864 15.1728 16.2698C11.7901 15.8348 8.64801 14.2827 6.2422 11.8584C3.8364 9.43414 2.30379 6.27558 1.88612 2.88097C1.87175 2.74827 1.88434 2.61403 1.92316 2.48636C1.96197 2.35869 2.02619 2.24023 2.11193 2.13815C2.19658 2.04152 2.30077 1.96408 2.41757 1.91097C2.53438 1.85787 2.66112 1.83032 2.78936 1.83015H5.49909C5.70914 1.82546 5.91424 1.89436 6.0791 2.02498C6.24396 2.1556 6.35827 2.33977 6.40233 2.54579C6.43846 2.7934 6.48363 3.03798 6.53782 3.27955C6.64216 3.75708 6.78103 4.22635 6.95331 4.68365L5.68877 5.27247C5.58065 5.32222 5.4834 5.3929 5.40259 5.48046C5.32178 5.56801 5.25901 5.67071 5.21789 5.78266C5.17676 5.8946 5.15809 6.0136 5.16295 6.1328C5.1678 6.252 5.19609 6.36907 5.24618 6.47728C6.54613 9.26987 8.78441 11.5147 11.5689 12.8184C11.7888 12.909 12.0354 12.909 12.2553 12.8184C12.368 12.778 12.4715 12.7155 12.5599 12.6347C12.6483 12.5538 12.7198 12.4561 12.7702 12.3473L13.3302 11.0791C13.7972 11.2466 14.2737 11.3857 14.7573 11.4958C14.9982 11.5502 15.2421 11.5955 15.489 11.6317C15.6944 11.6759 15.878 11.7905 16.0083 11.9559C16.1385 12.1212 16.2072 12.3269 16.2025 12.5376L16.2206 15.3639Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- question end
+    =========================================== -->
+    <!-- footer start
+    =========================================== -->
+    <footer class="footer">
+        <div class="auto__container">
+            <div class="footer__inner">
+                <div class="footer__inner-logo">
+                    <img src="images/logoDark.svg" alt="">
+                </div>
+                <div class="footer__inner-nav">
+                    <a href="#" class="footer__inner-nav-link">
+                        About
+                    </a>
+                    <a href="#" class="footer__inner-nav-link">
+                        Help
+                    </a>
+                    <a href="#" class="footer__inner-nav-link">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="footer__inner-nav-link">
+                        Terms of Use
+                    </a>
+                </div>
+                <div class="footer__inner-copy">
+                    <span>
+                        © 2021 Daysheets. All rights reserved
+                    </span>
+                    <a href="#">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 4.9C6.44305 4.9 5.9089 5.12125 5.51508 5.51508C5.12125 5.9089 4.9 6.44305 4.9 7C4.9 7.55695 5.12125 8.0911 5.51508 8.48492C5.9089 8.87875 6.44305 9.1 7 9.1C7.55695 9.1 8.0911 8.87875 8.48492 8.48492C8.87875 8.0911 9.1 7.55695 9.1 7C9.1 6.44305 8.87875 5.9089 8.48492 5.51508C8.0911 5.12125 7.55695 4.9 7 4.9ZM7 3.5C7.92826 3.5 8.8185 3.86875 9.47487 4.52513C10.1313 5.1815 10.5 6.07174 10.5 7C10.5 7.92826 10.1313 8.8185 9.47487 9.47487C8.8185 10.1313 7.92826 10.5 7 10.5C6.07174 10.5 5.1815 10.1313 4.52513 9.47487C3.86875 8.8185 3.5 7.92826 3.5 7C3.5 6.07174 3.86875 5.1815 4.52513 4.52513C5.1815 3.86875 6.07174 3.5 7 3.5ZM11.55 3.325C11.55 3.55706 11.4578 3.77962 11.2937 3.94372C11.1296 4.10781 10.9071 4.2 10.675 4.2C10.4429 4.2 10.2204 4.10781 10.0563 3.94372C9.89219 3.77962 9.8 3.55706 9.8 3.325C9.8 3.09294 9.89219 2.87038 10.0563 2.70628C10.2204 2.54219 10.4429 2.45 10.675 2.45C10.9071 2.45 11.1296 2.54219 11.2937 2.70628C11.4578 2.87038 11.55 3.09294 11.55 3.325ZM7 1.4C5.2682 1.4 4.9854 1.4049 4.1797 1.4406C3.6309 1.4665 3.2627 1.54 2.9211 1.673C2.6173 1.7906 2.3982 1.9313 2.1651 2.1651C1.946 2.37678 1.77755 2.63521 1.6723 2.9211C1.5393 3.2641 1.4658 3.6316 1.4406 4.1797C1.4042 4.9525 1.4 5.2227 1.4 7C1.4 8.7318 1.4049 9.0146 1.4406 9.8203C1.4665 10.3684 1.54 10.7373 1.6723 11.0782C1.7913 11.3827 1.9313 11.6018 2.1637 11.8342C2.3996 12.0694 2.6187 12.2101 2.9197 12.3263C3.2655 12.46 3.6337 12.5342 4.1797 12.5594C4.9525 12.5958 5.2227 12.6 7 12.6C8.7318 12.6 9.0146 12.5951 9.8203 12.5594C10.3677 12.5335 10.7366 12.46 11.0782 12.3277C11.3813 12.2094 11.6018 12.0687 11.8342 11.8363C12.0701 11.6004 12.2108 11.3813 12.327 11.0803C12.46 10.7352 12.5342 10.3663 12.5594 9.8203C12.5958 9.0475 12.6 8.7773 12.6 7C12.6 5.2682 12.5951 4.9854 12.5594 4.1797C12.5335 3.6323 12.46 3.2627 12.327 2.9211C12.2215 2.6355 12.0534 2.37717 11.8349 2.1651C11.6233 1.94589 11.3649 1.77742 11.0789 1.6723C10.7359 1.5393 10.3677 1.4658 9.8203 1.4406C9.0475 1.4042 8.7773 1.4 7 1.4ZM7 0C8.9019 0 9.1392 0.00699996 9.8854 0.042C10.6309 0.077 11.1384 0.1939 11.585 0.3675C12.047 0.5453 12.4362 0.7861 12.8254 1.1746C13.1813 1.52453 13.4568 1.94781 13.6325 2.415C13.8054 2.8609 13.923 3.3691 13.958 4.1146C13.9909 4.8608 14 5.0981 14 7C14 8.9019 13.993 9.1392 13.958 9.8854C13.923 10.6309 13.8054 11.1384 13.6325 11.585C13.4573 12.0524 13.1818 12.4758 12.8254 12.8254C12.4754 13.1812 12.0521 13.4566 11.585 13.6325C11.1391 13.8054 10.6309 13.923 9.8854 13.958C9.1392 13.9909 8.9019 14 7 14C5.0981 14 4.8608 13.993 4.1146 13.958C3.3691 13.923 2.8616 13.8054 2.415 13.6325C1.94763 13.4571 1.52427 13.1817 1.1746 12.8254C0.818585 12.4755 0.543152 12.0522 0.3675 11.585C0.1939 11.1391 0.077 10.6309 0.042 9.8854C0.00909996 9.1392 0 8.9019 0 7C0 5.0981 0.00699996 4.8608 0.042 4.1146C0.077 3.3684 0.1939 2.8616 0.3675 2.415C0.542665 1.94753 0.818163 1.52412 1.1746 1.1746C1.52437 0.818462 1.9477 0.543011 2.415 0.3675C2.8616 0.1939 3.3684 0.077 4.1146 0.042C4.8608 0.00909996 5.0981 0 7 0Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end
+    =========================================== -->
+    <script src="js/jquery.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

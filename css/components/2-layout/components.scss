@@ -1,0 +1,132 @@
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 80px;
+  color: $black-1;
+}
+p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: $dark-grey;
+  &.sm {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $dark-grey;
+  }
+}
+h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 47px;
+  color: $black-1;
+}
+.btn {
+  &-primary {
+    background: $primary;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+    padding: 13px 16px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      content: "";
+      background: $primary-dark;
+      transition: 0.2s ease-in-out;
+      height: 100%;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: $primary-dark;
+      transition: 0.2s ease-in-out;
+      z-index: -1;
+    }
+    &:hover::before {
+      width: 50%;
+    }
+    &:hover::after {
+      width: 50%;
+    }
+  }
+  &-secondary {
+    background: $white;
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: $primary;
+    padding: 13px 16px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    &.icon {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        @include transformY;
+        left: 17px;
+      }
+    }
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      content: "";
+      background: $border-color;
+      transition: 0.2s ease-in-out;
+      height: 100%;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: $border-color;
+      transition: 0.2s ease-in-out;
+      z-index: -1;
+    }
+    &:hover {
+      border: 1px solid $border-color;
+    }
+    &:hover::before {
+      width: 50%;
+    }
+    &:hover::after {
+      width: 50%;
+    }
+  }
+}

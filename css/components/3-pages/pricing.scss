@@ -1,0 +1,142 @@
+.hero {
+  margin-top: 91px;
+  padding: 160px 0;
+  overflow: hidden;
+  background: $primary;
+  &__inner {
+    display: flex;
+    align-items: center;
+    &-content {
+      width: calc(50% - 36px);
+      padding-right: 36px;
+    }
+    &-image {
+      width: calc(50% - 36px);
+      padding-left: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: -80px;
+      position: relative;
+      img {
+        width: 85%;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+      }
+      .card {
+        position: absolute;
+        bottom: -120px;
+        right: 20px;
+        width: 260px;
+        background: $dark-blue;
+        &__inner {
+          &-body {
+            &-title {
+              color: $white;
+            }
+            ul {
+              .li__icon {
+                svg {
+                  fill: $white;
+                }
+              }
+              li {
+                span {
+                  color: $white;
+                }
+              }
+            }
+          }
+          &-footer {
+            &-price {
+              color: rgba($color: $white, $alpha: 0.7);
+              span {
+                color: $white;
+              }
+              strong {
+                color: $white;
+              }
+            }
+            &-btn {
+              color: $primary;
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  h1 {
+    margin: 0 0 40px 0;
+    color: $white;
+  }
+  p {
+    margin: 32px 0;
+    color: $white;
+  }
+}
+.future {
+  margin: 80px 0;
+  &__inner {
+    &-row {
+      display: flex;
+      margin: 0 -16px;
+    }
+    &-column {
+      width: calc(25% - 32px);
+      margin: 0 16px;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  p.sm {
+    max-width: 640px;
+    margin: 16px auto 32px auto;
+    text-align: center;
+    color: $dark-grey;
+  }
+}
+.question {
+  margin: 160px 0;
+  &__inner {
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-link {
+      margin: 0 8px;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #ebeef2;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include transition;
+      svg {
+        fill: #a7b3cc;
+        @include transition;
+      }
+      &:hover {
+        background: $primary;
+        border: 1px solid $primary-dark;
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  p {
+    max-width: 610px;
+    margin: 16px auto 40px auto;
+    text-align: center;
+    color: $dark-grey;
+  }
+}

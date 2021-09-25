@@ -1,0 +1,18 @@
+.nav {
+  &__inner {
+    display: flex;
+    align-items: center;
+    &-link {
+      margin-right: 72px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      color: $black;
+      @include transition;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.select__outer {
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $black-1;
+    display: block;
+    margin-bottom: 9px;
+  }
+}
+.custom-select select {
+  display: none;
+}
+.custom-select {
+  position: relative;
+}
+.select-selected {
+  background-color: $white;
+  border-radius: 4px;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  z-index: 4;
+  border-bottom: 2px solid $medium-grey;
+  border-right: 2px solid $medium-grey;
+  @include transition;
+}
+.select-selected.select-arrow-active:after {
+  transform: translateY(-50%) rotate(225deg);
+}
+.select-selected.select-arrow-active {
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid $primary;
+  border-bottom: none;
+}
+.select-selected.select-arrow-active:hover {
+  border-bottom: none;
+}
+.select-selected {
+  border: 1px solid $light-grey;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: $black-1;
+  padding: 10px 15px;
+  cursor: pointer;
+  @include transition;
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+.select-items div {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: $black-1;
+  padding: 10px 15px;
+  cursor: pointer;
+  @include transition;
+}
+.select-items {
+  position: absolute;
+  background-color: $white;
+  border: 1px solid $primary;
+  border-top: 1px solid transparent;
+  border-radius: 0 0 4px 4px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+  animation-name: select;
+  animation-duration: 0.3s;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: #ededed;
+}
+.select-items::-webkit-scrollbar {
+  width: 10px;
+}
+.select-items::-webkit-scrollbar-track {
+  background: #ededed;
+  border-radius: 10px;
+}
+.select-items::-webkit-scrollbar-thumb {
+  background: #aeaeae;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}

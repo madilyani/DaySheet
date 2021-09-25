@@ -1,0 +1,65 @@
+.footer {
+  background: $light-grey;
+  padding: 24px 0;
+  &__inner {
+    &-logo {
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 24px 0;
+      &-link {
+        margin: 0 12px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: $black-1;
+        @include transition;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    &-copy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+      border-top: 1px solid rgba($color: $dark-grey, $alpha: 0.2);
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #546384;
+      }
+      a {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba($color: $dark-grey, $alpha: 0.1);
+        @include transition;
+        svg {
+          fill: $black;
+          @include transition;
+        }
+        &:hover {
+          background: $dark-grey;
+          svg {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}

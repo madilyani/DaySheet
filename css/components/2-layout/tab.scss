@@ -1,0 +1,70 @@
+.tab {
+  &__btns {
+    display: flex;
+    align-items: center;
+    margin: 0 -16px;
+  }
+  &__btn {
+    width: 105px;
+    height: 90px;
+    padding: 12px 0;
+    margin: 0 16px;
+    background: $white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+    @include transition;
+    &.active {
+      border: 1px solid $primary-dark;
+    }
+    &-icon {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        width: 27px;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $white;
+        box-sizing: border-box;
+        border-radius: 50%;
+        svg {
+          height: 10px;
+        }
+      }
+      &.green {
+        background: $green-bg;
+      }
+      &.red {
+        background: $red-bg;
+      }
+      &.violet {
+        background: $violet-bg;
+      }
+    }
+    &-text {
+      margin-top: 8px;
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: $primary;
+    }
+  }
+  &__item {
+    display: none;
+    position: relative;
+    animation: 1s book linear;
+    &.active {
+      display: flex;
+    }
+  }
+}

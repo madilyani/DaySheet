@@ -1,0 +1,103 @@
+.signUp {
+  padding: 130px 0;
+  position: relative;
+  margin-top: 91px;
+  box-sizing: border-box;
+  height: 100vh;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 43%;
+    background: $primary-dark;
+  }
+  &__inner {
+    display: flex;
+    &-content {
+      padding-right: 40px;
+      width: calc(50% - 40px);
+      &-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 90px;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        img {
+          width: 100%;
+        }
+      }
+      &-question {
+        width: 80%;
+        max-width: 330px;
+        display: flex;
+        padding-left: 70px;
+        &-icon {
+          width: 21px;
+          height: 21px;
+          margin-right: 9px;
+        }
+        &-info {
+          width: calc(100% - 30px);
+          &-text {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: $white;
+            margin-bottom: 24px;
+          }
+          &-links {
+            display: flex;
+            align-items: center;
+            margin: 0 -8px;
+          }
+          &-link {
+            margin: 0 8px;
+            width: 48px;
+            height: 48px;
+            border: 1px solid $white;
+            box-sizing: border-box;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include transition;
+            svg {
+              fill: $white;
+              @include transition;
+            }
+            &:hover {
+              background: $primary;
+              border: 1px solid $light-grey;
+            }
+          }
+        }
+      }
+    }
+    &-form {
+      padding-left: 40px;
+      width: calc(50% - 40px);
+      h1 {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 16px;
+      }
+      p.sm {
+        margin: 0 0 36px 0;
+      }
+      form {
+        max-width: 460px;
+        .btn-primary {
+          margin-top: 32px;
+          width: 100%;
+          max-width: 155px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
